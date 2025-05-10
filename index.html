@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="description" content="Personal website of Santiago M. Ladino showcasing coursework and projects">
+    <meta name="author" content="Santiago Mendoza Ladino">
+    <title>Rubia M. Francesco | Home</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/responsive-nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    Wdd 131 - Assignment 1
+    <header>
+        <div class="header-content">
+            <img src="images/profile.jpg" alt="Santiago M. Ladino" width="100" height="100">
+            <span>Santiago M. Ladino</span>
+        </div>
+        <nav>
+            <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+            <ul id="primary-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="card">
+            <h2>Course Work</h2>
+            <ul>
+                <li><strong>Bogota, Colombia</strong></li>
+                <li><strong>WEB and Computer Programming Certificate</strong></li>
+            </ul>
+        </section>
+        
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="all">All</button>
+                    <button class="tab-button" data-tab="cse">CSE</button>
+                    <button class="tab-button" data-tab="wdd">WDD</button>
+                </div>
+                <div class="tab-content active" id="all">
+                    <ul>
+                        <li>CSE 110</li>
+                        <li>WDD 130</li>
+                        <li>CSE 111</li>
+                        <li>CSE 210</li>
+                        <li>WDD 131</li>
+                        <li>WDD 231</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="cse">
+                    <ul>
+                        <li>CSE 110</li>
+                        <li>CSE 111</li>
+                        <li>CSE 210</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="wdd">
+                    <ul>
+                        <li>WDD 130</li>
+                        <li>WDD 131</li>
+                        <li>WDD 231</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> | Santiago Mendoza Ladino | Colombia |
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-nav.js"></script>
+    <script src="scripts/tabs.js"></script>
 </body>
 </html>

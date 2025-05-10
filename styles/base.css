@@ -1,0 +1,360 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+/* Variables de diseño */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #2ecc71;
+    --font-main: 'Roboto', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tipografía */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--dark-color);
+    margin-bottom: rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Estructura principal */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+header span {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav {
+    position: relative;
+}
+
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: var(--transition);
+}
+
+#menu-button:hover {
+    color: var(--secondary-color);
+}
+
+#primary-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+#primary-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+#primary-nav li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#primary-nav li.active a {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Pestañas de cursos */
+.course-tabs {
+    margin-top: 1rem;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.tab-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.tab-button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Lista de cursos */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.course {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.course.completed {
+    background-color: #e8f5e9;
+    border-left: 4px solid var(--success-color);
+}
+
+.course:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+
+.course-code {
+    font-weight: bold;
+    display: block;
+    color: var(--primary-color);
+}
+
+.course.completed .course-code {
+    color: var(--success-color);
+}
+
+.course-name {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.course-credits {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.credits-total {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: right;
+    color: var(--primary-color);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    
+    #menu-button {
+        display: block;
+    }
+    
+    #primary-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--dark-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding: 1rem;
+    }
+    
+    #primary-nav.show {
+        display: flex;
+    }
+    
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 1.5rem;
+    }
+    
+    .course-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+/* Efectos de hover para navegación */
+@media (hover: hover) {
+    #primary-nav li a {
+        position: relative;
+    }
+    
+    #primary-nav li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--secondary-color);
+        transition: var(--transition);
+        transform: translateX(-50%);
+    }
+    
+    #primary-nav li a:hover::after {
+        width: 80%;
+    }
+    
+    #primary-nav li.active a::after {
+        background-color: white;
+        width: 80%;
+    }
+}
