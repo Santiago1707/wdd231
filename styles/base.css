@@ -122,10 +122,12 @@ nav {
     color: var(--secondary-color);
 }
 
+/* Estilos específicos para la navegación responsive */
 #primary-nav {
     display: flex;
     list-style-type: none;
-    gap: 1rem;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 #primary-nav li a {
@@ -267,6 +269,57 @@ main {
     color: var(--primary-color);
 }
 
+/* Estilos para el contenedor de ubicaciones */
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.location {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.location:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.location h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.location img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.location p {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+.certificate {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ccc;
+}
+
 /* Pie de página */
 footer {
     background-color: var(--primary-color);
@@ -294,22 +347,56 @@ footer p {
     
     #menu-button {
         display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1001;
     }
-    
+
     #primary-nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
         background-color: var(--dark-color);
-        position: absolute;
-        top: 100%;
-        left: 0;
+        flex-direction: column;
+        padding: 5rem 1.5rem 1.5rem;
+        gap: 1rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        padding: 1rem;
+    }
+
+    #primary-nav.show {
+        right: 0;
+    }
+
+    #primary-nav li a {
+        display: block;
+        padding: 0.8rem;
+        border-radius: 4px;
     }
     
-    #primary-nav.show {
-        display: flex;
+    /* Overlay para fondo cuando el menú está abierto */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
     }
     
     .course-list {
