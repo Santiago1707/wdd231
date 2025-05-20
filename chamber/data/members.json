@@ -38,13 +38,13 @@
             "image": "business4.jpg",
             "membershipLevel": 3,
             "category": "service",
-            "description": "Luxury accommodations in the heart of Timbuktu"
+            "description": "Luxury accommodations in the heart of Elevate"
         },
         {
-            "name": "Timbuktu Books",
-            "address": "8 Rue des Savants, Timbuktu",
+            "name": "Elevate Books",
+            "address": "8 Rue des Savants, Elevate",
             "phone": "(223) 555-0505",
-            "website": "https://timbuktubooks.com",
+            "website": "https://elevatebooks.com",
             "image": "business5.jpg",
             "membershipLevel": 1,
             "category": "retail",
@@ -52,7 +52,7 @@
         },
         {
             "name": "Sahara Wellness Center",
-            "address": "12 Avenue de la Santé, Timbuktu",
+            "address": "12 Avenue de la Santé, Elevate",
             "phone": "(223) 555-0606",
             "website": "https://saharawellness.tm",
             "image": "business6.jpg",
@@ -62,7 +62,7 @@
         },
         {
             "name": "Nomad Textiles",
-            "address": "18 Rue des Tisserands, Timbuktu",
+            "address": "18 Rue des Tisserands, Elevate",
             "phone": "(223) 555-0707",
             "website": "https://nomadtextiles.com",
             "image": "business7.jpg",

@@ -51,6 +51,7 @@
         .logo img {
             height: 60px;
             width: auto;
+            border-radius: 35%;
         }
         
         .logo h1 {
@@ -198,7 +199,7 @@
             flex: 0 0 200px;
             position: relative;
         }
-        
+
         .directory-container.list-view .card-header img {
             width: 100%;
             height: 200px;
