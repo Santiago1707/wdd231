@@ -1,0 +1,22 @@
+        /* Small View (styles/large.css - despite the name, this is for small screens) */
+        @media (max-width: 480px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+            
+            .logo img {
+                height: 50px;
+            }
+            
+            .filter-options {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            
+            .directory-container {
+                grid-template-columns: 1fr;
+            }
+        }

@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Sahara Crafts",
+            "address": "15 Rue des Artisans, Timbuktu",
+            "phone": "(223) 555-0101",
+            "website": "https://saharacrafts.com",
+            "image": "business1.jpg",
+            "membershipLevel": 3,
+            "category": "retail",
+            "description": "Authentic Malian handicrafts and textiles"
+        },
+        {
+            "name": "Timbuktu Cafe",
+            "address": "22 Avenue du Marché, Timbuktu",
+            "phone": "(223) 555-0202",
+            "website": "https://timbuktucafe.com",
+            "image": "business2.jpg",
+            "membershipLevel": 2,
+            "category": "food",
+            "description": "Traditional Malian cuisine in a modern setting"
+        },
+        {
+            "name": "Desert Oasis Tours",
+            "address": "5 Boulevard du Sahara, Timbuktu",
+            "phone": "(223) 555-0303",
+            "website": "https://desertoasis.com",
+            "image": "business3.jpg",
+            "membershipLevel": 3,
+            "category": "service",
+            "description": "Experience the magic of the Sahara Desert"
+        },
+        {
+            "name": "Golden Sands Hotel",
+            "address": "30 Rue de l'Hospitalité, Timbuktu",
+            "phone": "(223) 555-0404",
+            "website": "https://goldensands.tm",
+            "image": "business4.jpg",
+            "membershipLevel": 3,
+            "category": "service",
+            "description": "Luxury accommodations in the heart of Timbuktu"
+        },
+        {
+            "name": "Timbuktu Books",
+            "address": "8 Rue des Savants, Timbuktu",
+            "phone": "(223) 555-0505",
+            "website": "https://timbuktubooks.com",
+            "image": "business5.jpg",
+            "membershipLevel": 1,
+            "category": "retail",
+            "description": "Books and manuscripts from across the region"
+        },
+        {
+            "name": "Sahara Wellness Center",
+            "address": "12 Avenue de la Santé, Timbuktu",
+            "phone": "(223) 555-0606",
+            "website": "https://saharawellness.tm",
+            "image": "business6.jpg",
+            "membershipLevel": 2,
+            "category": "health",
+            "description": "Holistic health services and traditional treatments"
+        },
+        {
+            "name": "Nomad Textiles",
+            "address": "18 Rue des Tisserands, Timbuktu",
+            "phone": "(223) 555-0707",
+            "website": "https://nomadtextiles.com",
+            "image": "business7.jpg",
+            "membershipLevel": 1,
+            "category": "retail",
+            "description": "Handwoven textiles and fabrics"
+        }
+    ]
+}
