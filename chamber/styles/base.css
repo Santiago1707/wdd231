@@ -28,7 +28,8 @@
         
         a {
             text-decoration: none;
-            color: var(--primary-color);
+            color: white;
+            font-size: larger;
         }
         
         /* Header Styles */
@@ -49,7 +50,7 @@
         }
         
         .logo img {
-            height: 60px;
+            height: 100px;
             width: auto;
             border-radius: 35%;
         }
@@ -57,6 +58,7 @@
         .logo h1 {
             margin: 0;
             font-size: 1.5rem;
+            color: var(--light-text);
         }
         
         /* Navigation */
@@ -91,6 +93,7 @@
         
         .navigation a:hover, .navigation .active a {
             background-color: var(--secondary-color);
+            color: black;
         }
         
         .social-media {
@@ -240,7 +243,7 @@
             border-radius: 4px;
             font-size: 0.8rem;
             font-weight: bold;
-            color: white;
+            color: black;
         }
         
         .membership-badge.gold {
@@ -271,6 +274,10 @@
         
         .contact-info p {
             margin: 0.5rem 0;
+        }
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
         }
         
         /* Footer */
