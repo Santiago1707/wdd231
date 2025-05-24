@@ -201,55 +201,91 @@ h2 {
 }
 
 /* Weather Section */
-.weather {
-    margin-bottom: 2rem;
+/* Weather Section */
+.weather-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.weather-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: var(--card-shadow);
+.weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.current-weather {
+    flex: 1;
+    min-width: 200px;
+}
+
+.forecast {
+    flex: 2;
+    min-width: 300px;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.weather-details p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.forecast-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
     text-align: center;
 }
 
-.weather-temp {
-    font-size: 2rem;
+.day {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.weather-condition {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.forecast-temp {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
 }
 
-.weather-details {
-    text-align: left;
+.forecast-desc {
+    font-size: 0.9rem;
+    color: #555;
 }
 
-/* Forecast Section */
-.forecast {
-    margin-bottom: 2rem;
+.error, .loading {
+    color: #666;
+    font-style: italic;
 }
 
-.forecast-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.forecast-day {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: var(--card-shadow);
-    text-align: center;
-}
-
-.forecast-day h3 {
-    margin-top: 0;
-    color: var(--primary-color);
+@media (max-width: 600px) {
+    .weather-container {
+        flex-direction: column;
+    }
 }
 
 /* Spotlights Section */
