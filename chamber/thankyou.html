@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining the Elevate Chamber of Commerce">
+    <meta name="author" content="Santiago Mendoza Ladino">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Thank You - Elevate Chamber of Commerce">
+    <meta property="og:description" content="Thank you for your membership application">
+    <meta property="og:image" content="https://yourdomain.com/images/Elevate-social-share.jpg">
+    <meta property="og:url" content="https://yourdomain.com/thankyou.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/chamber/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <title>Thank You - Elevate Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <style>
+        /* Base CSS (styles.css) */
+:root {
+--primary-color: #2c3e50;
+/* Dark blue */
+--secondary-color: #e74c3c;
+/* Red */
+--accent-color: #f39c12;
+/* Orange */
+--background-color: #f9f9f9;
+--text-color: #333;
+--light-text: #fff;
+--border-color: #ddd;
+--card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', Arial, sans-serif;
+line-height: 1.6;
+color: var(--text-color);
+background-color: var(--background-color);
+margin: 0;
+padding: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+a {
+text-decoration: none;
+color: white;
+font-size: larger;
+}
+
+/* Header Styles */
+header {
+background-color: var(--primary-color);
+color: var(--light-text);
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.logo img {
+height: 100px;
+width: auto;
+border-radius: 35%;
+}
+
+.logo h1 {
+margin: 0;
+font-size: 1.5rem;
+color: var(--light-text);
+}
+
+/* Navigation */
+nav {
+display: flex;
+align-items: center;
+}
+
+#menu-button {
+background: none;
+border: none;
+color: var(--light-text);
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+
+.navigation {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+gap: 1.5rem;
+}
+
+.navigation a {
+color: var(--light-text);
+padding: 0.5rem;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+
+.navigation a:hover,
+.navigation .active a {
+background-color: var(--secondary-color);
+color: black;
+}
+
+.social-media {
+display: flex;
+gap: 1rem;
+}
+
+.social-media img {
+width: 30px;
+height: 30px;
+}
+/* Thank You Page Specific Styles */
+.thank-you-container {
+max-width: 800px;
+margin: 2rem auto;
+padding: 2rem;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+animation: fadeIn 0.6s ease-out;
+}
+
+.confirmation-message {
+text-align: center;
+margin-bottom: 2rem;
+padding-bottom: 1rem;
+border-bottom: 2px solid var(--accent-color);
+}
+
+.confirmation-message h2 {
+color: var(--primary-color);
+margin-bottom: 1rem;
+}
+
+.confirmation-message p {
+font-size: 1.1rem;
+line-height: 1.6;
+}
+
+.submitted-info {
+margin-top: 2rem;
+}
+
+.submitted-info h3 {
+color: var(--primary-color);
+margin-bottom: 1.5rem;
+text-align: center;
+}
+
+.info-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+}
+
+.info-card {
+background-color: var(--background-color);
+padding: 1.5rem;
+border-radius: 6px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+transform: translateY(-5px);
+}
+
+.info-card h4 {
+color: var(--secondary-color);
+margin-top: 0;
+margin-bottom: 0.5rem;
+font-size: 0.9rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.info-card p {
+margin: 0;
+font-size: 1.1rem;
+color: var(--text-color);
+word-break: break-word;
+}
+
+.home-button {
+display: block;
+width: fit-content;
+margin: 2rem auto 0;
+padding: 0.75rem 1.5rem;
+background-color: var(--accent-color);
+color: white;
+text-decoration: none;
+border-radius: 4px;
+font-weight: bold;
+text-align: center;
+transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+background-color: var(--secondary-color);
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@media (max-width: 600px) {
+.thank-you-container {
+    padding: 1.5rem;
+}
+
+.info-grid {
+    grid-template-columns: 1fr;
+}
+}
+
+    /* Footer */
+footer {
+background-color: var(--primary-color);
+color: var(--light-text);
+padding: 2rem 1rem;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+}
+
+.contact-info h3, .quick-links h3 {
+margin-top: 0;
+color: var(--accent-color);
+}
+
+.quick-links ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.quick-links li {
+margin-bottom: 0.5rem;
+}
+
+.quick-links a {
+color: var(--light-text);
+}
+
+.quick-links a:hover {
+text-decoration: underline;
+}
+
+.credits {
+font-size: 0.9rem;
+opacity: 0.8;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Elevate Chamber of Commerce Logo" width="100">
+                <h1>Elevate Chamber of Commerce</h1>
+            </a>
+        </div>
+        <nav>
+            <button id="menu-button" aria-label="Navigation Menu">☰</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook" width="30"></a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn" width="30"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="thank-you-container">
+            <div class="confirmation-message">
+                <h2>Thank You for Your Application!</h2>
+                <p>We appreciate you taking the time to join the Elevate Chamber of Commerce. Your application has been received and our team will review it shortly. Below is a summary of the information you submitted.</p>
+            </div>
+
+            <div class="submitted-info">
+                <h3>Your Application Details</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>First Name</h4>
+                        <p id="displayFirstName"></p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Last Name</h4>
+                        <p id="displayLastName"></p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Email Address</h4>
+                        <p id="displayEmail"></p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Phone Number</h4>
+                        <p id="displayPhone"></p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Organization</h4>
+                        <p id="displayOrganization"></p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Membership Level</h4>
+                        <p id="displayMembership"></p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Application Date</h4>
+                        <p id="displayTimestamp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html" class="home-button">Return to Homepage</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Elevate Chamber of Commerce</h3>
+                <p>10 Rue De La Paix<br>Elevate, Mali 999</p>
+                <p>info@elevatecc.org<br>(223) 555-2300</p>
+            </div>
+            
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </div>
+            
+            <div class="credits">
+                <p>© <span id="current-year"></span> Elevate Chamber of Commerce</p>
+                <p>Santiago Mendoza Ladino</p>
+                <p>WDD231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Parse URL parameters and display submitted data
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Display submitted values
+            document.getElementById('displayFirstName').textContent = urlParams.get('firstName') || 'Not provided';
+            document.getElementById('displayLastName').textContent = urlParams.get('lastName') || 'Not provided';
+            document.getElementById('displayEmail').textContent = urlParams.get('email') || 'Not provided';
+            document.getElementById('displayPhone').textContent = urlParams.get('phone') || 'Not provided';
+            document.getElementById('displayOrganization').textContent = urlParams.get('organization') || 'Not provided';
+            
+            // Format membership level
+            const membership = urlParams.get('membershipLevel');
+            let membershipText = 'Not provided';
+            if (membership) {
+                switch(membership) {
+                    case 'NP': membershipText = 'Non-Profit Membership'; break;
+                    case 'Bronze': membershipText = 'Bronze Membership'; break;
+                    case 'Silver': membershipText = 'Silver Membership'; break;
+                    case 'Gold': membershipText = 'Gold Membership'; break;
+                    default: membershipText = membership;
+                }
+            }
+            document.getElementById('displayMembership').textContent = membershipText;
+            
+            // Format timestamp
+            const timestamp = urlParams.get('timestamp');
+            if (timestamp) {
+                const date = new Date(timestamp);
+                document.getElementById('displayTimestamp').textContent = date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            } else {
+                document.getElementById('displayTimestamp').textContent = new Date().toLocaleDateString();
+            }
+            
+            // Update year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Update last modified date
+            document.getElementById('last-modified').textContent = document.lastModified;
+            
+            // Mobile menu functionality
+            const menuButton = document.getElementById('menu-button');
+            const navigation = document.querySelector('.navigation');
+            
+            menuButton.addEventListener('click', function() {
+                navigation.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

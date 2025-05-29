@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of local businesses and organizations in Elevate - Elevate Chamber of Commerce">
+    <meta name="author" content="Santiago Mendoza Ladino">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Elevate Chamber of Commerce - Business Directory">
+    <meta property="og:description" content="Discover local businesses and organizations in Elevate through our comprehensive directory">
+    <meta property="og:image" content="https://yourdomain.com/images/Elevate-social-share.jpg">
+    <meta property="og:url" content="https://yourdomain.com/directory.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/chamber/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <title>Elevate Chamber of Commerce - Business Directory</title>
+    <link rel="stylesheet" href="styles/basej.css">
+    <link rel="stylesheet" href="styles/largerj.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo1.png  " alt="Elevate Chamber of Commerce Logo" width="100">
+                <h1>Elevate Chamber of Commerce</h1>
+            </a>
+        </div>
+        <nav>
+            <button id="menu-button" aria-label="Navigation Menu">☰</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook" width="30"></a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn" width="30"></a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Join the Elevate Chamber of Commerce</h2>
+<form method="get" action="thankyou.html">
+    
+    <label>
+        First Name:
+        <input type="text" name="firstName" title="First Name" required autocomplete="given-name">
+    </label>
+
+    <label>
+        Last Name:
+        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name">
+    </label>
+
+    <label>
+        Organizational Title:
+        <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Marketing Manager">
+    </label>
+
+    <label>
+        Email Address:
+        <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@domain.com">
+    </label>
+
+    <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel">
+    </label>
+
+    <label>
+        Organization Name:
+        <input type="text" name="organization" title="Organization Name" required autocomplete="organization">
+    </label>
+
+    <label>
+        Membership Level:
+        <select name="membershipLevel" title="Membership Level" required>
+            <option value="" disabled selected>Select Membership Level</option>
+            <option value="NP">NP Membership (Non-Profit - Free)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+        </select>
+    </label>
+
+    <label>
+        Business Description:
+        <textarea name="description" title="Business or Organization Description" rows="5"></textarea>
+    </label>
+
+    <input type="hidden" name="timestamp" id="timestamp">
+
+    <input type="submit" value="Submit Application">
+</form>
+
+<section class="membership-container">
+    <div class="membership-cards">
+        <div class="card" tabindex="0">
+            <h3>NP Membership</h3>
+            <p>Perfect for non-profit organizations. No fee required.</p>
+            <button onclick="openModal('modal-np')" aria-label="More about NP Membership">Learn More</button>
+        </div>
+
+        <div class="card" tabindex="0">
+            <h3>Bronze Membership</h3>
+            <p>Basic benefits and entry-level exposure opportunities.</p>
+            <button onclick="openModal('modal-bronze')" aria-label="More about Bronze Membership">Learn More</button>
+        </div>
+
+        <div class="card" tabindex="0">
+            <h3>Silver Membership</h3>
+            <p>Includes event discounts and spotlight advertising.</p>
+            <button onclick="openModal('modal-silver')" aria-label="More about Silver Membership">Learn More</button>
+        </div>
+
+        <div class="card" tabindex="0">
+            <h3>Gold Membership</h3>
+            <p>Top-tier benefits with premium visibility and training access.</p>
+            <button onclick="openModal('modal-gold')" aria-label="More about Gold Membership">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal-np" role="dialog" aria-modal="true" aria-labelledby="np-title">
+    <div class="modal-content">
+        <h2 id="np-title">NP Membership Benefits</h2>
+        <ul>
+            <li>No fee</li>
+            <li>Access to community events</li>
+            <li>Basic directory listing</li>
+        </ul>
+        <button onclick="closeModal('modal-np')" aria-label="Close NP Modal">Close</button>
+    </div>
+</div>
+
+<div class="modal" id="modal-bronze" role="dialog" aria-modal="true" aria-labelledby="bronze-title">
+    <div class="modal-content">
+        <h2 id="bronze-title">Bronze Membership Benefits</h2>
+        <ul>
+            <li>All NP benefits</li>
+            <li>Event invitations</li>
+            <li>Newsletter inclusion</li>
+        </ul>
+        <button onclick="closeModal('modal-bronze')" aria-label="Close Bronze Modal">Close</button>
+    </div>
+</div>
+
+<div class="modal" id="modal-silver" role="dialog" aria-modal="true" aria-labelledby="silver-title">
+    <div class="modal-content">
+        <h2 id="silver-title">Silver Membership Benefits</h2>
+        <ul>
+            <li>All Bronze benefits</li>
+            <li>Discounted event fees</li>
+            <li>Homepage spotlight</li>
+        </ul>
+        <button onclick="closeModal('modal-silver')" aria-label="Close Silver Modal">Close</button>
+    </div>
+</div>
+
+<div class="modal" id="modal-gold" role="dialog" aria-modal="true" aria-labelledby="gold-title">
+    <div class="modal-content">
+        <h2 id="gold-title">Gold Membership Benefits</h2>
+        <ul>
+            <li>All Silver benefits</li>
+            <li>Priority event access</li>
+            <li>Free training workshops</li>
+        </ul>
+        <button onclick="closeModal('modal-gold')" aria-label="Close Gold Modal">Close</button>
+    </div>
+</div>
+
+
+<script>
+    // Add timestamp when the page loads
+    document.addEventListener("DOMContentLoaded", () => {
+        const now = new Date().toISOString();
+        document.getElementById("timestamp").value = now;
+    });
+</script>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Elevate Chamber of Commerce</h3>
+                <p>10 Rue De La Paix<br>Elevate, Mali 999</p>
+                <p>info@elevatecc.org<br>(223) 555-2300</p>
+            </div>
+            
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </div>
+            
+            <div class="credits">
+                <p>© <span id="current-year"></span> Elevate Chamber of Commerce</p>
+                <p>Santiago Mendoza Ladino</p>
+                <p>WDD231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/common.js"></script>
+    <script>
+        // Common functions for all pages
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Update last modified date
+            document.getElementById('last-modified').textContent = document.lastModified;
+            
+            // Mobile menu functionality
+            const menuButton = document.getElementById('menu-button');
+            const navigation = document.querySelector('.navigation');
+            
+            menuButton.addEventListener('click', function() {
+                navigation.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
