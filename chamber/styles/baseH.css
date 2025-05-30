@@ -1,13 +1,16 @@
 /* Base CSS */
 :root {
-    --primary-color: #2c3e50;      /* Dark blue */
-    --secondary-color: #e74c3c;    /* Red */
-    --accent-color: #f39c12;       /* Orange */
+    --primary-color: #2c3e50;
+    /* Dark blue */
+    --secondary-color: #e74c3c;
+    /* Red */
+    --accent-color: #f39c12;
+    /* Orange */
     --background-color: #f9f9f9;
     --text-color: #333;
     --light-text: #fff;
     --border-color: #ddd;
-    --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -30,7 +33,7 @@ a {
     text-decoration: none;
     color: white;
     font-size: larger;
-    
+
 }
 
 /* Header Styles */
@@ -92,7 +95,8 @@ nav {
     transition: background-color 0.3s;
 }
 
-.navigation a:hover, .navigation .active a {
+.navigation a:hover,
+.navigation .active a {
     background-color: var(--secondary-color);
     color: black;
 }
@@ -135,10 +139,9 @@ h2 {
     max-height: 500px;
     object-fit: cover;
     border-radius: 8px;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.3)
-    ), url('/chamber/images/heroimage.jpg'); /* Replace with actual image URL */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url('/chamber/images/heroimage.jpg');
+    /* Replace with actual image URL */
 }
 
 .hero-content {
@@ -148,13 +151,13 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--text-color);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     padding: 0 1rem;
 }
 
 .hero-content h2 {
-    color:  #2c3e50;
+    color: #2c3e50;
     border-bottom: none;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -207,7 +210,7 @@ h2 {
     padding: 1.5rem;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .weather-container {
@@ -277,7 +280,8 @@ h2 {
     color: #555;
 }
 
-.error, .loading {
+.error,
+.loading {
     color: #666;
     font-style: italic;
 }
@@ -331,7 +335,8 @@ footer {
     gap: 2rem;
 }
 
-.contact-info h3, .quick-links h3 {
+.contact-info h3,
+.quick-links h3 {
     margin-top: 0;
     color: var(--accent-color);
 }
@@ -367,38 +372,38 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
 }
-        /* Medium View (styles/medium.css) */
-        @media (max-width: 768px) {
-            .logo h1 {
-                font-size: 1.2rem;
-            }
-            
-            #menu-button {
-                display: block;
-            }
-            
-            .navigation {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                margin-top: 1rem;
-            }
-            
-            .navigation.open {
-                display: flex;
-            }
-            
-            .directory-controls {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .directory-container.list-view .business-card {
-                flex-direction: column;
-            }
-            
-            .directory-container.list-view .card-header {
-                flex: 0 0 auto;
-            }
-        }
-        
+
+/* Medium View (styles/medium.css) */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .directory-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .directory-container.list-view .business-card {
+        flex-direction: column;
+    }
+
+    .directory-container.list-view .card-header {
+        flex: 0 0 auto;
+    }
+}
