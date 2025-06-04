@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="caffe.css">
+    <script src="caffe.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Descriptions of the website content.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Mendoza">
+    <title>caffe-rose</title>
+</head>
+
+<body>
+    <header>
+        <h1>Caffe Rose</h1>
+        <a id="menu"></a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <img class="cafefondo" src="images/cafelarge.webp" loading="lazy" alt="cafelarge">
+            <div class="text">
+                <h2>Welcome to Caffe Rose</h2>
+                <p>Our mission is to provide the best experience in the world. We are a family business that has
+                    been
+                    in the coffee industry for over 50 years. We are proud to offer the best coffee beans from
+                    around the
+                    world. Our baristas are trained to make the perfect cup of coffee every time. We also offer a
+                    variety of
+                    pastries and sandwiches to enjoy with your coffee. Come visit us today and experience the best
+                    coffee in
+                    the world.</p>
+                <button class="boton" id="orderButton">Order Now</button>
+                <!-- The Modal -->
+                <div id="orderModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Place Your Order</h2>
+                        <form id="orderForm">
+                            <!-- Coffee selection -->
+                            <label for="coffee">Choose your coffee:</label>
+                            <select id="coffee" name="coffee">
+                                <option value="espresso">Espresso</option>
+                                <option value="latte">Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="americano">Americano</option>
+                            </select>
+                            <br>
+                            <!-- Quantity input -->
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <br>
+                            <!-- Submit button -->
+                            <button type="submit">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <p>We are open 7 days a week ☕ 8am - 9pm</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2025 / Caffe Rose by Santiago Mendoza /</p>
+        <div class="sociallinks">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.svg" loading="lazy" alt="Facebok" width="40">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" loading="lazy" alt="Instagram" width="40">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" loading="lazy" alt="Twitter" width="40">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

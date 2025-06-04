@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="caffe.css">
+    <script src="caffe.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Descriptions of the website content.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Mendoza">
+    <title>caffe-rose</title>
+</head>
+
+<body>
+    <header>
+        <h1>Caffe Rose</h1>
+        <a id="menu"></a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reservation-container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <p class="section-subtitle">Book a table in advance to enjoy the best experience.</p>
+            <form id="reservation-form" class="reservation-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="people">Number of People</label>
+                <input type="number" id="people" name="people" min="1" required>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="reserve-btn">Reserve Now</button>
+            </form>
+            <p id="confirmation-message" class="confirmation-message" style="display: none;">Your reservation
+                has been submitted!</p>
+        </div>
+        <script>
+            document.getElementById("reservation-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                document.getElementById("confirmation-message").style.display = "block";
+            });
+        </script>
+
+    </main>
+
+    <footer>
+        <p>&copy;2025 / Caffe Rose by Santiago Mendoza /</p>
+        <div class="sociallinks">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.svg" loading="lazy" alt="Facebok" width="40">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" loading="lazy" alt="Instagram" width="40">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" loading="lazy" alt="Twitter" width="40">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #ffffff;   /* white */
+    --secondary-color: #FFB3C6; /* light pink */
+    --accent-color: #FF8FAB;    /* pink */  
+    --text-color: #000000;    /* black */
+    --background-color: #FFC2D1; /* lighter pink */
+    --header-footer: #784150;   /* dark pink */
+    --font-family1: "Space Grotesk", serif;
+    --font-family2: "Afacad Flux", sans-serif;
+}
+
+header {
+    background-color: var(--header-footer);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+body {
+    font-family: var(--font-family2);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em;
+    justify-content: center;
+}
+p{
+    font-family: var(--font-family1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+footer {
+    background-color: var(--header-footer);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
