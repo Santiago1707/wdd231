@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Notre-Dame Basilica",
+        "address": "110 Notre-Dame St W, Montreal, QC H2Y 1T1",
+        "description": "A stunning Gothic Revival church in Old Montreal with a spectacular interior.",
+        "image": "images/notre-dame.webp"
+    },
+    {
+        "name": "Old Port of Montreal",
+        "address": "333 Rue de la Commune O, Montréal, QC H2Y 2E2",
+        "description": "Historic waterfront area with activities, dining, and entertainment year-round.",
+        "image": "images/old-port.webp"
+    },
+    {
+        "name": "Mount Royal Park",
+        "address": "1260 Remembrance Rd, Montreal, QC H3H 1A2",
+        "description": "Designed by Frederick Law Olmsted, offering panoramic views of the city.",
+        "image": "images/mount-royal.webp"
+    },
+    {
+        "name": "Biodome de Montreal",
+        "address": "4777 Pierre-de Coubertin Ave, Montreal, QC H1V 1B3",
+        "description": "Explore five ecosystems of the Americas under one roof.",
+        "image": "images/biodome.webp"
+    },
+    {
+        "name": "St. Joseph's Oratory",
+        "address": "3800 Queen Mary Rd, Montreal, QC H3V 1H6",
+        "description": "Canada's largest church and one of the world's most visited shrines.",
+        "image": "images/st-joseph.webp"
+    },
+    {
+        "name": "Jean-Talon Market",
+        "address": "7070 Henri Julien Ave, Montreal, QC H2S 3S3",
+        "description": "One of North America's largest open-air markets with local produce.",
+        "image": "images/jean-talon.webp"
+    },
+    {
+        "name": "Le Plateau-Mont-Royal",
+        "address": "Various locations in Plateau district",
+        "description": "Trendy neighborhood known for its colorful houses and artistic vibe.",
+        "image": "images/plateau.webp"
+    },
+    {
+        "name": "McGill University Campus",
+        "address": "845 Sherbrooke St W, Montreal, QC H3A 0G4",
+        "description": "Historic university campus with beautiful architecture and green spaces.",
+        "image": "images/mcgill.webp"
+    }
+]
