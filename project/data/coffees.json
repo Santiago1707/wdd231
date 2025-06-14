@@ -1,0 +1,155 @@
+{
+"coffees": [
+{
+    "id": 1,
+    "name": "Espresso",
+    "description": "A concentrated form of coffee served in small, strong shots",
+    "price": 3.50,
+    "origin": "Italy",
+    "roast": "Dark",
+    "image": "espresso.webp",
+    "caffeine": "High"
+},
+{
+    "id": 2,
+    "name": "Americano",
+    "description": "Espresso shots topped with hot water for a lighter taste",
+    "price": 4.00,
+    "origin": "Italy",
+    "roast": "Medium",
+    "image": "americano.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 3,
+    "name": "Cappuccino",
+    "description": "Espresso with steamed milk and a silky layer of foam",
+    "price": 4.75,
+    "origin": "Italy",
+    "roast": "Medium",
+    "image": "cappuccino.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 4,
+    "name": "Latte",
+    "description": "Espresso with a generous amount of steamed milk",
+    "price": 5.00,
+    "origin": "Italy",
+    "roast": "Medium",
+    "image": "latte.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 5,
+    "name": "Mocha",
+    "description": "Espresso with chocolate syrup and steamed milk",
+    "price": 5.50,
+    "origin": "Italy",
+    "roast": "Medium",
+    "image": "mocha.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 6,
+    "name": "Macchiato",
+    "description": "Espresso with a small amount of foamed milk",
+    "price": 4.25,
+    "origin": "Italy",
+    "roast": "Dark",
+    "image": "macchiato.webp",
+    "caffeine": "High"
+},
+{
+    "id": 7,
+    "name": "Flat White",
+    "description": "Espresso with microfoam for a velvety texture",
+    "price": 5.00,
+    "origin": "Australia",
+    "roast": "Medium",
+    "image": "flat-white.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 8,
+    "name": "Cold Brew",
+    "description": "Coffee steeped in cold water for 12+ hours",
+    "price": 4.50,
+    "origin": "Japan",
+    "roast": "Light",
+    "image": "cold-brew.webp",
+    "caffeine": "High"
+},
+{
+    "id": 9,
+    "name": "Iced Coffee",
+    "description": "Chilled coffee served over ice",
+    "price": 4.00,
+    "origin": "Global",
+    "roast": "Medium",
+    "image": "iced-coffee.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 10,
+    "name": "Turkish Coffee",
+    "description": "Finely ground coffee brewed in a cezve",
+    "price": 5.25,
+    "origin": "Turkey",
+    "roast": "Dark",
+    "image": "turkish.webp",
+    "caffeine": "High"
+},
+{
+    "id": 11,
+    "name": "French Press",
+    "description": "Full-bodied coffee brewed with a plunger",
+    "price": 4.75,
+    "origin": "France",
+    "roast": "Medium",
+    "image": "french-press.webp",
+    "caffeine": "High"
+},
+{
+    "id": 12,
+    "name": "Pour Over",
+    "description": "Precision-brewed single-origin coffee",
+    "price": 5.50,
+    "origin": "Global",
+    "roast": "Light",
+    "image": "pour-over.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 13,
+    "name": "Affogato",
+    "description": "Espresso poured over vanilla ice cream",
+    "price": 6.00,
+    "origin": "Italy",
+    "roast": "Dark",
+    "image": "affogato.webp",
+    "caffeine": "Medium"
+},
+{
+    "id": 14,
+    "name": "Cortado",
+    "description": "Espresso cut with a small amount of warm milk",
+    "price": 4.50,
+    "origin": "Spain",
+    "roast": "Medium",
+    "image": "cortado.webp",
+    "caffeine": "High"
+},
+{
+    "id": 15,
+    "name": "Irish Coffee",
+    "description": "Coffee with Irish whiskey and cream",
+    "price": 7.50,
+    "origin": "Ireland",
+    "roast": "Dark",
+    "image": "irish.webp",
+    "caffeine": "Medium"
+}
+],
+"about": "Caffe Rose offers premium coffee selections from around the world. Our beans are ethically sourced and freshly roasted daily."
+}

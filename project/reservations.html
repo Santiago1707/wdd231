@@ -19,6 +19,11 @@
     <meta name="description" content="Page to make reservations at Caffe Rose, a family business with over 50 years in the coffee industry.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Santiago Mendoza">
+    <meta property="og:title" content="Caffe Rose - Premium Coffee Experience">
+    <meta property="og:description" content="Family-owned coffee shop with 50 years of tradition">
+    <meta property="og:image" content="images/cafelarge.webp">
+    <meta property="og:url" content="https://santiago1707.github.io/wdd131/project/home.html">
+    <meta name="twitter:card" content="summary_large_image">
     <title>caffe-rose</title>
 </head>
 
@@ -40,7 +45,7 @@
         <div class="reservation-container">
             <h2 class="section-title">Make a Reservation</h2>
             <p class="section-subtitle">Book a table in advance to enjoy the best experience.</p>
-            <form id="reservation-form" class="reservation-form">
+            <form id="reservation-form" class="reservation-form" action="form-action.html" method="GET">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -61,13 +66,14 @@
             <p id="confirmation-message" class="confirmation-message" style="display: none;">Your reservation
                 has been submitted!</p>
         </div>
+    <!--
         <script>
             document.getElementById("reservation-form").addEventListener("submit", function (event) {
                 event.preventDefault();
                 document.getElementById("confirmation-message").style.display = "block";
             });
         </script>
-
+    -->
     </main>
 
     <footer>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Caffe Rose - Premium Coffee Experience">
+    <meta property="og:description" content="Family-owned coffee shop with 50 years of tradition">
+    <meta property="og:image" content="images/cafelarge.webp">
+    <meta property="og:url" content="https://santiago1707.github.io/wdd131/project/home.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Form Submission Received</title>
+</head>
+<body>
+    <h1>Thank You for Your Reservation!</h1>
+    <div id="reservation-details">
+        <!-- Data will be inserted here by JavaScript -->
+    </div>
+    <script>
+        // Get form data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const email = urlParams.get('email');
+        const people = urlParams.get('people');
+        const date = urlParams.get('date');
+        const time = urlParams.get('time');
+
+        // Display the data
+        const detailsDiv = document.getElementById('reservation-details');
+        detailsDiv.innerHTML = `
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Number of People:</strong> ${people}</p>
+            <p><strong>Date:</strong> ${date}</p>
+            <p><strong>Time:</strong> ${time}</p>
+        `;
+    </script>
+</body>
+</html>
